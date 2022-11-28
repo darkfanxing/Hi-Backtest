@@ -11,7 +11,7 @@ def is_below_price(data, price):
     return True if data.Open[-1] < price and data.High[-1] < price and data.Low[-1] < price and data.Close[-1] < price else False
 
 
-class DoubleMAWithRSIStrategy(Strategy):
+class SMAEMAWithRSIStrategy(Strategy):
     rsi_length = 14
     sma_length = 10
     ema_length = 10

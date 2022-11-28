@@ -1,6 +1,6 @@
 import yfinance as yf
 from backtesting import Backtest
-from strategy import DoubleMAWithRSIStrategy
+from strategy import SMAEMAWithRSIStrategy
 import os
 
 code = "BTC-USD"
@@ -11,7 +11,7 @@ for interval in ["5m", "15m", "60m"]:
     data = yf.Ticker(code)
     data = data.history(period="1mo", interval=interval)
     for _ in range(50):
-        backtest = Backtest(data, DoubleMAWithRSIStrategy, cash=cash, commission=0.0)
+        backtest = Backtest(data, SMAEMAWithRSIStrategy, cash=cash, commission=0.0)
         stat = backtest.run()
         backtest.optimize(
             sma_length=range(5, 101),

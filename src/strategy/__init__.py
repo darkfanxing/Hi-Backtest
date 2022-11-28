@@ -1,5 +1,5 @@
-from .DoubleMAWithRSIStrategy import DoubleMAWithRSIStrategy
+from .SMAEMAWithRSIStrategy import SMAEMAWithRSIStrategy
 
 __all__ = [
-    DoubleMAWithRSIStrategy
+    SMAEMAWithRSIStrategy
 ]
