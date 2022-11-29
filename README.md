@@ -30,7 +30,7 @@ Get Data
 2. Modify the paramters (symbol and time) @ `src/utils/download_latest_binance_data.py`
 3. Run the python file
     ```
-    python  src/utils/download_latest_binance_data
+    python  src/utils/download_latest_binance_data.py
     ```
 4. You get the historical klines data @ `src/data/`
 
