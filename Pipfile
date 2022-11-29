@@ -8,6 +8,7 @@ yfinance = "*"
 backtesting = "*"
 pandas-ta = "*"
 bokeh = "==2.4.3"
+python-binance = "*"
 
 [dev-packages]
 ipykernel = "*"
