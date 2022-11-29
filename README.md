@@ -7,6 +7,7 @@ Just a backtest trading strategies project.
 Table of contents
 =================
 - [Environment Setup](#environment-setup)
+- [Get Data](#get-data)
 - [Strategies](#strategies)
 - [Reference](#reference)
 
@@ -23,6 +24,15 @@ Then, you can run the `src/main.py`
 python src/main.py
 ```
 
+Get Data 
+=================
+1. Refer to Binance's symbol and time period
+2. Modify the paramters (symbol and time) @ `src/utils/download_latest_binance_data.py`
+3. Run the python file
+    ```
+    python  src/utils/download_latest_binance_data
+    ```
+4. You get the historical klines data @ `src/data/`
 
 Strategies
 =================
