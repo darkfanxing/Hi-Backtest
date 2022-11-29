@@ -32,7 +32,7 @@ Get Historical Data
     ```
     python  src/utils/download_latest_binance_data.py
     ```
-4. You get the historical klines data @ `src/data/`
+4. You get the historical data @ `src/data/`
 
 Strategies
 =================
