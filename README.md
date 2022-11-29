@@ -7,7 +7,7 @@ Just a backtest trading strategies project.
 Table of contents
 =================
 - [Environment Setup](#environment-setup)
-- [Get Data](#get-data)
+- [Get Historical Data](#get-historical-data)
 - [Strategies](#strategies)
 - [Reference](#reference)
 
@@ -24,7 +24,7 @@ Then, you can run the `src/main.py`
 python src/main.py
 ```
 
-Get Data 
+Get Historical Data 
 =================
 1. Refer to Binance's symbol and time period
 2. Modify the paramters (symbol and time) @ `src/utils/download_latest_binance_data.py`
