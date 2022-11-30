@@ -32,12 +32,12 @@ class SMAEMAWithRSIStrategy(Strategy):
                 self.buy(
                     sl=self.sma[-1], tp=self.data.Close[-1] +
                     self.tp_sl_ratio * (self.data.Close[-1] - self.sma[-1]),
-                    size=4
+                    size=1
                 )
 
             elif 30 < self.rsi[-1] < 50 and is_below_price(self.data, self.sma[-1]) and self.sma[-1] < self.ema[-1] and self.data.Close[-1] < self.data.Open[-1]:
                 self.sell(
                     sl=self.sma[-1], tp=max(1, self.data.Close[-1] -
                     self.tp_sl_ratio * (self.sma[-1] - self.data.Close[-1])),
-                    size=4
+                    size=1
                 )
